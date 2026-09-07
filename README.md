@@ -10,9 +10,9 @@ This is a descriptive and exploratory project. It will identify patterns and pos
 
 ## Current status
 
-**Phase 1 — Data orientation and quality audit**
+**Dataset inspection — structure, completeness, and measurement limitations**
 
-The first notebook loads selected fields from the complete census, checks its structure, measures missingness, and records observations before analysis decisions are made.
+The first notebook uses compact server-side queries to inspect the complete census, measure missingness, test category consistency, and document measurement limitations without downloading the full dataset.
 
 ## Official data source
 
@@ -25,7 +25,7 @@ The large raw dataset is downloaded on demand and is not committed to this repos
 
 ## Planned analysis
 
-1. Validate fields, categories, duplicates, and missing values.
+1. Inspect fields, categories, duplicates, and meaningful missingness.
 2. Establish a defensible analysis population, especially for living trees.
 3. Compare health distributions across boroughs.
 4. Compare common species while avoiding unstable conclusions from small groups.
@@ -35,7 +35,7 @@ The large raw dataset is downloaded on demand and is not committed to this repos
 
 ## Repository structure
 
-- `notebooks/01_data_exploration.ipynb` — source validation and initial audit
+- `notebooks/01_data_exploration.ipynb` — lightweight source inspection and anomaly documentation
 - `requirements.txt` — core Python packages
 - `.gitignore` — excludes downloaded data and temporary files
 - `README.md` — purpose, method, sources, and progress
